@@ -1,7 +1,8 @@
 (function(app){
 	app
-	.controller('testCtrl', ['$scope', '$http' function($scope, $http){
-		$http.get('/api/now/table/u_users', {
+	.controller('TestCtrl', ['$scope', '$http', function($scope, $http){
+
+		$http.get('/api/now/table/sys_user', {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',

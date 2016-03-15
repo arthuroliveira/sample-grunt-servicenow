@@ -3,11 +3,13 @@
 <head>
 	<title>Title here</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-	<script src="ui_scripts/community__main.js"></script>
+	<script src="../ui_scripts/community__main.js"></script>
 </head>
-<body ng-all="sample_app">
+<body ng-app="sample_app">
+	<ul ng-controller="TestCtrl">
+		<li ng-repeat="obj in response">{{ obj.user_name }}</li>
+	</ul>
 
-	<div ng-controller="testCtrl">{{ response }} </div>
 
 </body>
 </html>
